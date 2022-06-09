@@ -11,5 +11,5 @@ https://patcont.github.io/Portfolio-webpage/portfolio-details%20copy%202.html#
 
 ## Screenshots
 
-![Alt text](https://patcont.github.io/Portfolio-webpage/assets/img/portfolio/landscapes.gif)
+![hippo](https://patcont.github.io/Portfolio-webpage/assets/img/portfolio/landscapes.gif)
 
