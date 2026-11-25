@@ -1,26 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="es">
 <head>
-    <link rel=stylesheet href="estilo.css"/>
-    <title>Landscapes</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tarjetas interactivas con paisajes de Chile." />
+  <title>Paisajes de Chile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="panel active" style="background-image: url('https://i.guim.co.uk/img/media/b00f47a719578c7b0cf0709c097abb11546c53d4/0_296_7360_4417/master/7360.jpg?width=940&quality=45&auto=format&fit=max&dpr=2&s=22b530bac7d31202452d25ef5e3d3715');">
-            <h3>Valle del Elqui</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://i.guim.co.uk/img/media/c3a89ad1c0fe5449dee22111e8e33fa79140f5b2/0_0_3565_2138/master/3565.jpg?width=780&quality=45&auto=format&fit=max&dpr=2&s=91320cf614ba8534e05bf8e18bfe9154');">
-            <h3>Cajón del Maipo</h3>
-        </div>
-        <div class="panel ca" style="background-image: url('https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/2019-01/atacama-desert-in-chile.jpg');">
-            <h3>Valle de la luna</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://storage.googleapis.com/chile-travel-static-content/2021/05/torres-del-paine-chile-1.jpg');">
-            <h3>Torres del Paine</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://media.cntraveler.com/photos/5984a43b06b61375673544b6/master/w_1920%2Cc_limit/Easter-Island-GettyImages-454352667.jpg');">
-            <h3>Isla de Pascua</h3>
-        </div>
-    </div>
- <script src="js.js"></script>   
-</body>
+  <header>
+    <h1>Paisajes de Chile</h1>
+    <p>Del desierto más árido del mundo a los hielos de la Patagonia. Toca una tarjeta para abrirla.</p>
+  </header>
 
+  <main class="cards" role="list">
+    <!-- Photos: Wikimedia Commons, see credits below -->
+    <button class="card is-active" role="listitem" aria-expanded="true"
+      style="--img: url('https://commons.wikimedia.org/wiki/Special:FilePath/Valle_della_Luna_01.jpg?width=1600')">
+      <span class="info"><small>Región de Antofagasta</small><strong>Valle de la Luna</strong></span>
+    </button>
+    <button class="card" role="listitem" aria-expanded="false"
+      style="--img: url('https://commons.wikimedia.org/wiki/Special:FilePath/Valle_del_Elqui_2.JPG?width=1600')">
+      <span class="info"><small>Región de Coquimbo</small><strong>Valle del Elqui</strong></span>
+    </button>
+    <button class="card" role="listitem" aria-expanded="false"
+      style="--img: url('https://commons.wikimedia.org/wiki/Special:FilePath/Embalse_El_Yeso,_Caj%C3%B3n_del_Maipo_(40186598701).jpg?width=1600')">
+      <span class="info"><small>Región Metropolitana</small><strong>Cajón del Maipo</strong></span>
+    </button>
+    <button class="card" role="listitem" aria-expanded="false"
+      style="--img: url('https://commons.wikimedia.org/wiki/Special:FilePath/Cuernos_del_Paine_a_Lago_Pehoe_-_panoramio.jpg?width=1600')">
+      <span class="info"><small>Región de Magallanes</small><strong>Torres del Paine</strong></span>
+    </button>
+    <button class="card" role="listitem" aria-expanded="false"
+      style="--img: url('https://commons.wikimedia.org/wiki/Special:FilePath/Ahu-Tongariki-from-south-west-2013.jpg?width=1600')">
+      <span class="info"><small>Región de Valparaíso</small><strong>Rapa Nui</strong></span>
+    </button>
+  </main>
+
+  <footer>
+    <details>
+      <summary>Créditos de las fotos</summary>
+      <ul>
+        <li>Valle de la Luna — Davide guallini, CC BY-SA 3.0</li>
+        <li>Valle del Elqui — Menaqs, CC BY-SA 3.0</li>
+        <li>Cajón del Maipo (Embalse El Yeso) — Deensel, CC BY 2.0</li>
+        <li>Torres del Paine (Cuernos del Paine y Lago Pehoé) — Pavel Špindler, CC BY 3.0</li>
+        <li>Rapa Nui (Ahu Tongariki) — Bjørn Christian Tørrissen, CC BY-SA 3.0</li>
+      </ul>
+      <p>Todas vía <a href="https://commons.wikimedia.org">Wikimedia Commons</a>.</p>
+    </details>
+  </footer>
+</body>
+</html>
